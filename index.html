@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perspicacity | Campaign</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <!-- Poppins Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS CND -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Timepicker CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <!-- Select2 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="logo text-center">
+            <a href="#"><img src="./assets/images/logo.png" alt="Perspicacity"></a>
+        </div>
+        <ul class="sidebar__menu side-nav list-unstyled">
+            <li class="side-nav-item">
+                <a href="#" class="side-nav-link">
+                    <img class="in__svg" src="./assets/images/sidebar/dashboard.svg" alt="Dashboard">
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="side-nav-item">
+                <a href="#" class="side-nav-link">
+                    <img class="in__svg" src="./assets/images/sidebar/all_inbox.svg" alt="Inventory">
+                    <span>Inventory</span>
+                </a>
+            </li>
+            <li class="side-nav-item has-child">
+                <a href="#" class="side-nav-link">
+                    <img class="in__svg" src="./assets/images/sidebar/users.svg" alt="Partners">
+                    <span>Partners</span>
+                </a>
+                <ul class="side-nav-submenu list-unstyled">
+                    <li class="nav-submenu-item"><a href="#">Account Managers</a></li>
+                </ul>
+            </li>
+            <li class="side-nav-item has-child">
+                <a href="#" class="side-nav-link">
+                    <img class="in__svg" src="./assets/images/sidebar/labels.svg" alt="Brands">
+                    <span>Brands</span>
+                </a>
+                <ul class="side-nav-submenu list-unstyled">
+                    <li class="nav-submenu-item"><a href="#">Overview</a></li>
+                    <li class="nav-submenu-item"><a href="#">Performance</a></li>
+                    <li class="nav-submenu-item"><a href="#">Products</a></li>
+                    <li class="nav-submenu-item active"><a href="#">Campaign</a></li>
+                    <li class="nav-submenu-item"><a href="#">Users</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+    <main class="main__wapper">
+        <header class="header navbar">
+            <div class="mobile__menu">
+                <div class="mobile__line"></div>
+                <div class="mobile__line"></div>
+                <div class="mobile__line"></div>
+            </div>
+            <div class="page-title"><h1 class="h4 fw-semibold mb-0">Add Campaign for <span class="fw-normal">Penfolds</span></h1></div>
+            <div class="header__user d-flex align-items-center">
+                <div class="user__icon">
+                    <img class="in__svg" src="./assets/images/user.svg" alt="User">
+                </div>
+                <div class="user__name">
+                    <h6 class="fw-semibold mb-0">Jordan Service</h6>
+                    <p class="small mb-0">Admin</p>
+                </div>
+                <div class="three__dot"><img class="in__svg" src="./assets/images/3dots.svg" alt="Dots"></div>
+            </div>
+        </header>
+        <div class="content__wrapper">
+            <div class="page__head row align-items-center">
+                <nav class="col-lg-8 col-md-7" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                      <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                      <li class="breadcrumb-item"><a href="#">Brands</a></li>
+                      <li class="breadcrumb-item"><a href="#">Penfolds</a></li>
+                      <li class="breadcrumb-item"><a href="#">Campaign</a></li>
+                      <li class="breadcrumb-item active" aria-current="page"><a href="#">Add Campaign</a></li>
+                    </ol>
+                </nav>
+                <div class="page__filter col-lg-4 col-md-5">
+                    <div class="row align-items-center justify-content-end g-0">
+                        <label class="col-md-4 mb-0 text-end me-3">Switch Brand</label>
+                        <div class="col-md-7">
+                            <select name="brand" class="form-select">
+                                <option value="0">Penfolds</option>
+                                <option value="1">Penfolds Brand</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page__content">
+                <ul class="wizard__progress card list-unstyled flex-row justify-content-center">
+                    <li class="wizard__progress__step complete">
+                        <div class="progress__step__number"><img src="./assets/images/tick.svg" alt="Tick"></div>
+                        <div class="progress__step__details">
+                            <h6 class="mb-0">Choose Goal</h6>
+                            <p class="small mb-0">Customer Retention</p>
+                        </div>
+                    </li>
+                    <li class="wizard__progress__step complete">
+                        <div class="progress__step__number"><img src="./assets/images/tick.svg" alt="Tick"></div>
+                        <div class="progress__step__details">
+                            <h6 class="mb-0">Campaign Details</h6>
+                            <p class="small mb-0">Share A Glass With Campaign</p>
+                        </div>
+                    </li>
+                    <li class="wizard__progress__step active">
+                        <div class="progress__step__number">3</div>
+                        <div class="progress__step__details">
+                            <h6 class="mb-0">Configure Experience</h6>
+                            <p class="small mb-0">Sequence of Taps</p>
+                        </div>
+                    </li>
+                    <li class="wizard__progress__step">
+                        <div class="progress__step__number">4</div>
+                        <div class="progress__step__details">
+                            <h6 class="mb-0">Review Campaign</h6>
+                        </div>
+                    </li>
+                </ul>
+                <div class="wizard__contents card">
+                    <div class="card__title">
+                        <h4 class="mb-1 fw-semibold">Choose the Rule for Setting the Experience</h4>
+                        <p class="mb-0">You can set an experience only for one of the following rules</p>
+                    </div>
+                    <ul class="rules-tabs nav nav-tabs border-0" id="rulesTab" role="tablist">
+                        <li class="nav-item active" id="rules-1-tab" data-bs-toggle="tab" data-bs-target="#rules-1-tab-pane" type="button" role="tab" aria-controls="rules-1-tab-pane" aria-selected="true" role="presentation">
+                            <div class="rule-tab-item">
+                                <div class="rules-tab-icon text-center">
+                                    <img class="in__svg" src="./assets/images/rules-icon/rules-icon-1.svg" alt="Rules Icon">
+                                </div>
+                                <div class="rules-tab-text text-center">
+                                    <h5 class="fw-semibold mb-1">Sequence of Taps</h5>
+                                    <p class="mb-0">The PWA View will change based on the number of times the audience is tapping on the same product item</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item" id="rules-2-tab" data-bs-toggle="tab" data-bs-target="#rules-2-tab-pane" type="button" role="tab" aria-controls="rules-2-tab-pane" aria-selected="false" role="presentation">
+                            <div class="rule-tab-item">
+                                <div class="rules-tab-icon text-center">
+                                    <img class="in__svg" src="./assets/images/rules-icon/rules-icon-2.svg" alt="Rules Icon">
+                                </div>
+                                <div class="rules-tab-text text-center">
+                                    <h5 class="fw-semibold mb-1">Time of the Day</h5>
+                                    <p class="mb-0">The PWA View will change based on the time of the day when the audience is taps on the product item</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item" id="rules-3-tab" data-bs-toggle="tab" data-bs-target="#rules-3-tab-pane" type="button" role="tab" aria-controls="rules-3-tab-pane" aria-selected="false" role="presentation">
+                            <div class="rule-tab-item">
+                                <div class="rules-tab-icon text-center">
+                                    <img class="in__svg" src="./assets/images/rules-icon/rules-icon-3.svg" alt="Rules Icon">
+                                </div>
+                                <div class="rules-tab-text text-center">
+                                    <h5 class="fw-semibold mb-1">Location</h5>
+                                    <p class="mb-0">The PWA View will change based on location of the audience</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="rulesTabContent">
+                        <div class="tab-pane fade show active" id="rules-1-tab-pane" role="tabpanel" aria-labelledby="rules-1-tab" tabindex="0">
+                            <div class="tab-content-title">
+                                <h6 class="fw-semibold mb-1">Experience Configuration</h6>
+                                <h5 class="fw-normal mb-0">You can only set a sequence of 3 taps</h5>
+                            </div>
+                            <div class="sequence-taps-list">
+                                <div class="sequence-tap-item d-flex align-items-end">
+                                    <div class="sequence-tap-number">
+                                        <p class="small mb-0">TAP</p>
+                                        <h2 class="fw-semibold mb-0">01</h2>
+                                    </div>
+                                    <div class="sequence-tap-url">
+                                        <label>First Tap URL *</label>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" name="url" class="form-control" value="https://www.penfolds.com/en-au/wines/the-penfolds-collection/yattarna/2016" placeholder='for ex. "www.example.com"'>
+                                                <a href="#" class="btn btn-sm btn-primary btn-preview"><img class="in__svg" src="./assets/images/perview.svg" alt="Preview"> Preview</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sequence-tap-item d-flex align-items-end">
+                                    <div class="sequence-tap-number">
+                                        <p class="small mb-0">TAP</p>
+                                        <h2 class="fw-semibold mb-0">02</h2>
+                                    </div>
+                                    <div class="sequence-tap-url">
+                                        <label>Second Tap URL *</label>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" name="url" class="form-control" value="https://www.penfolds.com/-/media/Files/Penfolds2/Tasting-Notes/The-Penfolds-Collection/Y..." placeholder='for ex. "www.example.com"'>
+                                                <a href="#" class="btn btn-sm btn-primary btn-preview"><img class="in__svg" src="./assets/images/perview.svg" alt="Preview"> Preview</a>
+                                                <a href="#" class="delete"><img class="in__svg" src="./assets/images/delete.svg" alt="Delete"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sequence-tap-item d-flex align-items-end">
+                                    <div class="sequence-tap-number">
+                                        <p class="small mb-0">TAP</p>
+                                        <h2 class="fw-semibold mb-0">03</h2>
+                                    </div>
+                                    <div class="sequence-tap-url">
+                                        <label>Third Tap URL *</label>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" name="url" class="form-control" value="https://www.penfolds.com/-/media/Files/Penfolds2/Tasting-Notes/Penfolds-x-Magill-Estate-Restaurant-Recipes.ashx?la=en-US&hash=625B6F026509B61498C4B9A3152938A11FE47324" placeholder='for ex. "www.example.com"'>
+                                                <a href="#" class="btn btn-sm btn-primary btn-preview"><img class="in__svg" src="./assets/images/perview.svg" alt="Preview"> Preview</a>
+                                                <a href="#" class="delete"><img class="in__svg" src="./assets/images/delete.svg" alt="Delete"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sequence-tap-item d-flex align-items-end">
+                                    <div class="sequence-tap-number">
+                                        <p class="small mb-0">TAP</p>
+                                        <h2 class="fw-semibold mb-0">04</h2>
+                                    </div>
+                                    <div class="sequence-tap-url">
+                                        <label>Fourth Tap URL *</label>
+                                        <div class="form-group">
+                                            <input type="text" name="url" class="form-control" placeholder='for ex. "www.example.com"'>
+                                            <p class="input-info mb-0"><img src="./assets/images/info.svg" alt="Info"> Enter the URL of the PWA that will be shown when the user taps on the tag for the first time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add__sequence">
+                                <a href="#"><img class="in__svg" src="./assets/images/plus_circle.svg" alt="Plus"> Add New Tap</a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="rules-2-tab-pane" role="tabpanel" aria-labelledby="rules-2-tab" tabindex="0">
+                            <div class="tab-content-title">
+                                <h6 class="fw-semibold mb-1">Experience Configuration</h6>
+                                <h5 class="fw-normal mb-0">You can set upto 5 different PWA URLs for the Time of the Day rule.</h5>
+                            </div>
+                            <div class="pwa-taps-list">
+                                <div class="pwa-tap-item">
+                                    <div class="row">
+                                        <div class="form-group col-md-4">
+                                            <label>Select Day of the Week *</label>
+                                            <select name="week" class="select2" multiple="multiple" data-placeholder="for ex. 'Monday, Tuesday'" required>
+                                                <option value="0">All Days</option>
+                                                <option value="1">Weekdays</option>
+                                                <option value="3">Today</option>
+                                            </select>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="all-day-01">
+                                                <label class="form-check-label" for="all-day-01">Set for all days</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group time__box col-md-2">
+                                            <label>From</label>
+                                            <div class="input-group">
+                                                <input type="text" name="from" class="timepicker form-control" placeholder="HH : MM" required>
+                                                <span class="input-group-text">
+                                                    <select name="am-pm" class="form-select">
+                                                        <option value="0">AM</option>
+                                                        <option value="1">PM</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="all-time-01">
+                                                <label class="form-check-label" for="all-time-01">Set for all time</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group time__box col-md-2">
+                                            <label>To</label>
+                                            <div class="input-group">
+                                                <input type="text" name="to" class="timepicker form-control" placeholder="HH : MM" required>
+                                                <span class="input-group-text">
+                                                    <select name="am-pm" class="form-select">
+                                                        <option value="0">AM</option>
+                                                        <option value="1">PM</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group sequence-tap-url col-md-4">
+                                            <label>PWA URL *</label>
+                                            <div class="input-group">
+                                                <input type="text" name="url" class="form-control" value="https://www.penfolds.com/en-au/wines..." placeholder="www.example.com" required>
+                                                <a href="#" class="btn btn-sm btn-primary btn-preview"><img class="in__svg" src="./assets/images/perview.svg" alt="Preview"> Preview</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="delete"><img class="in__svg" src="./assets/images/delete.svg" alt="Delete"></a>
+                                </div>
+                                <div class="pwa-tap-item">
+                                    <div class="row">
+                                        <div class="form-group col-md-4">
+                                            <label>Select Day of the Week *</label>
+                                            <select name="week" class="select2" multiple="multiple" data-placeholder="for ex. 'Monday, Tuesday'" required>
+                                                <option value="0">All Days</option>
+                                                <option value="1">Weekdays</option>
+                                                <option value="3">Today</option>
+                                            </select>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="all-day-02">
+                                                <label class="form-check-label" for="all-day-02">Set for all days</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group time__box col-md-2">
+                                            <label>From</label>
+                                            <div class="input-group">
+                                                <input type="text" name="from" class="timepicker form-control" placeholder="HH : MM" required>
+                                                <span class="input-group-text">
+                                                    <select name="am-pm" class="form-select">
+                                                        <option value="0">AM</option>
+                                                        <option value="1">PM</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="all-time-02" checked>
+                                                <label class="form-check-label" for="all-time-02">Set for all time</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group time__box col-md-2">
+                                            <label>To</label>
+                                            <div class="input-group">
+                                                <input type="text" name="to" class="timepicker form-control" placeholder="HH : MM" required>
+                                                <span class="input-group-text">
+                                                    <select name="am-pm" class="form-select">
+                                                        <option value="0">AM</option>
+                                                        <option value="1">PM</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group sequence-tap-url col-md-4">
+                                            <label>PWA URL *</label>
+                                            <div class="input-group">
+                                                <input type="text" name="url" class="form-control" value="https://www.penfolds.com/en-au/wines..." placeholder="www.example.com" required>
+                                                <a href="#" class="btn btn-sm btn-primary btn-preview"><img class="in__svg" src="./assets/images/perview.svg" alt="Preview"> Preview</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="delete"><img class="in__svg" src="./assets/images/delete.svg" alt="Delete"></a>
+                                </div>
+                            </div>
+                            <div class="add__sequence">
+                                <a href="#"><img class="in__svg" src="./assets/images/plus_circle.svg" alt="Plus"> Add New Tap</a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="rules-3-tab-pane" role="tabpanel" aria-labelledby="rules-3-tab" tabindex="0">
+                            <div class="tab-content-title">
+                                <h6 class="fw-semibold mb-1">Experience Configuration</h6>
+                                <h5 class="fw-normal mb-0">You can set upto 5 Locations</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="action__buttons">
+                    <button type="submit" class="btn btn-primary">Save & Review Campaign</button>
+                    <button type="submit" class="btn btn-outline">Save as Draft</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <p class="mb-0 copyright-text">© 2020 <span class="fw-semibold">Proqure</span>. Crafted by DIGI<span class="fw-bold">CORP</span></p>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <ul class="footer__link d-flex align-items-center justify-content-end list-unstyled mb-0">
+                        <li>
+                            <a href="#">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap 5 JS CND -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Rimepicker JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <!-- Select2 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- Custom Script -->
+    <script src="./assets/js/main.js"></script>
+    <script>
+        // Time Picker
+        $(document).ready(function(){
+            $('.timepicker').timepicker({
+                timeFormat: 'hh:mm'
+            });
+        });
+    </script>
+    <script>
+        // Select2 Multiselect
+        $(document).ready(function() {
+            $('.select2').select2();
+        })
+    </script>
+</body>
+</html>
