@@ -67,19 +67,29 @@
                 <div class="mobile__line"></div>
                 <div class="mobile__line"></div>
             </div>
+            <div class="logo mobile-logo">
+                <a href="#"><img src="./assets/images/mobile-logo.png" width="60" height="68" alt="Perspicacity"></a>
+            </div>
             <div class="page-title"><h1 class="h4 fw-semibold mb-0">Add Campaign for <span class="fw-normal">Penfolds</span></h1></div>
-            <div class="header__user d-flex align-items-center">
-                <div class="user__icon">
-                    <img class="in__svg" src="./assets/images/user.svg" alt="User">
-                </div>
-                <div class="user__name">
-                    <h6 class="fw-semibold mb-0">Jordan Service</h6>
-                    <p class="small mb-0">Admin</p>
-                </div>
+            <div class="header__user dropdown d-flex align-items-center">
+                <a class="d-flex align-items-center" href="javascript: void(0);" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="user__icon">
+                        <img class="in__svg" src="./assets/images/user.svg" alt="User">
+                    </div>
+                    <div class="user__name">
+                        <h6 class="fw-semibold mb-0">Jordan Service</h6>
+                        <p class="small mb-0">Admin</p>
+                    </div>
+                </a>
+                <ul class="dropdown-menu text-small">
+                    <li class="dropdown-item"><a class="link-text" href="/">My Account</a></li>
+                    <li class="dropdown-item"><a class="link-text" href="/">Sign out</a></li>
+                </ul>
                 <div class="three__dot"><img class="in__svg" src="./assets/images/3dots.svg" alt="Dots"></div>
             </div>
         </header>
         <div class="content__wrapper">
+            <div class="page-title page-title-mobile mb-4"><h1 class="h4 fw-semibold mb-0">Add Campaign for <span class="fw-normal">Penfolds</span></h1></div>
             <div class="page__head row align-items-center">
                 <nav class="col-lg-8 col-md-7" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb mb-0">
@@ -267,7 +277,7 @@
                                         <div class="form-group time__box col-md-2">
                                             <label>From</label>
                                             <div class="input-group">
-                                                <input type="text" name="from" class="timepicker form-control" placeholder="HH : MM" required>
+                                                <input type="text" name="from" class="timepicker form-control" placeholder="HH : MM" required autocomplete="off">
                                                 <span class="input-group-text">
                                                     <select name="am-pm" class="form-select">
                                                         <option value="0">AM</option>
@@ -283,7 +293,7 @@
                                         <div class="form-group time__box col-md-2">
                                             <label>To</label>
                                             <div class="input-group">
-                                                <input type="text" name="to" class="timepicker form-control" placeholder="HH : MM" required>
+                                                <input type="text" name="to" class="timepicker form-control" placeholder="HH : MM" required autocomplete="off">
                                                 <span class="input-group-text">
                                                     <select name="am-pm" class="form-select">
                                                         <option value="0">AM</option>
@@ -319,7 +329,7 @@
                                         <div class="form-group time__box col-md-2">
                                             <label>From</label>
                                             <div class="input-group">
-                                                <input type="text" name="from" class="timepicker form-control" placeholder="HH : MM" required>
+                                                <input type="text" name="from" class="timepicker form-control" placeholder="HH : MM" required autocomplete="off">
                                                 <span class="input-group-text">
                                                     <select name="am-pm" class="form-select">
                                                         <option value="0">AM</option>
@@ -335,7 +345,7 @@
                                         <div class="form-group time__box col-md-2">
                                             <label>To</label>
                                             <div class="input-group">
-                                                <input type="text" name="to" class="timepicker form-control" placeholder="HH : MM" required>
+                                                <input type="text" name="to" class="timepicker form-control" placeholder="HH : MM" required autocomplete="off">
                                                 <span class="input-group-text">
                                                     <select name="am-pm" class="form-select">
                                                         <option value="0">AM</option>

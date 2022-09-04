@@ -55,6 +55,9 @@ path, a:hover path {
     color: rgba(55, 67, 101, 0.87);
     opacity: 0.5;
 }
+.btn-outline:hover {
+    opacity: 1;
+}
 .btn-sm {
     padding: 4px 6px;
     border-radius: 4px !important;
@@ -160,6 +163,11 @@ path, a:hover path {
     border-color: rgba(35, 120, 255, 0.2);
     color: var(--blueColor);
 }
+.side-nav-item a:hover,
+.nav-submenu-item a:hover {
+    color: var(--blueColor);
+    opacity: 1;
+}
 /* Sidebar CSS */
 
 /* Header CSS */
@@ -168,7 +176,7 @@ path, a:hover path {
     border-bottom: 1px solid rgba(22, 63, 181, 0.1);
 }
 
-.mobile__menu {
+.mobile__menu, .mobile-logo {
     display: none;
 }
 .user__icon {
@@ -180,6 +188,9 @@ path, a:hover path {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.header__user a {
+    color: var(--primaryColor);
 }
 .header__user .three__dot {
     margin-left: 1.143rem;
@@ -207,6 +218,9 @@ path, a:hover path {
 }
 .content__wrapper {
     padding: 1.143rem 2.143rem 2.857rem 2.143rem;
+}
+.page-title-mobile {
+    display: none;
 }
 .page__filter label {
     color: #2378FF;
@@ -302,6 +316,7 @@ path, a:hover path {
     padding: 1.714rem 1.214rem;
     height: 100%;
     position: relative;
+    cursor: pointer;
 }
 .nav-item.active .rule-tab-item:after {
     content: "";
@@ -650,18 +665,39 @@ path, a:hover path {
 @media (max-width: 991px) {
     /* Sidebar CSS */
     .sidebar {
-        display: none;
+        left: -100%;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
     .sidebar.show {
-        display: block;
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
     /* Sidebar CSS */
+
+    /* Header CSS */
+    .mobile-logo { display: block; }
+    .mobile-logo img {
+        width: 40px;
+    }
+    /* Header CSS */
 
     /* Main Wrapper CSS */
     .main__wapper { margin-left: 0; }
     /* Main Wrapper CSS */
 
     /* Page Content CSS */
+    .page-title { display: none;}
+    .page-title-mobile {
+        display: block;
+    }
     .input-info {
         position: static;
         margin-top: 0.5rem;
@@ -729,6 +765,10 @@ path, a:hover path {
     .header__user {
         padding-right: 25px;
     }
+    .header__user .dropdown-menu {
+        right: 0;
+        left: auto;
+    }
     .mobile__menu { right: 15px; }
     /* Header CSS */
     
@@ -739,9 +779,6 @@ path, a:hover path {
     /* Main Wrapper CSS */
 
     /* Page Content CSS */
-    .page-title h1 span {
-        display: block;
-    }
     .page__filter {
         margin-top: 1rem;
     }
